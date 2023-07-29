@@ -1,0 +1,43 @@
+<!-- Header -->
+<div class="header">
+  <img alt="Logo" class="header_logo" src="/assets/images/logo.svg" />
+  <div class="header_tabs" *ngIf="!isSidebar; else sidebarModel">
+    <p
+      *ngFor="let tab of headerTabs"
+      (click)="setActiveHeaderItem(tab.value, tab.link)"
+      class="header_tabs-item"
+      [ngClass]="{
+        active: tab.value === activeHeaderItem,
+        gray: tab.value === 'our_teams'
+      }"
+    >
+      {{ tab.title }}
+    </p>
+  </div>
+  <ng-template #sidebarModel>
+    <div class="header_sidebar-button">
+      <img
+        class="sidebar-icon"
+        src="/assets/icons/sidebar-icon.svg"
+        (click)="toggleSideBar()"
+      />
+    </div>
+  </ng-template>
+</div>
+<div class="sidebar" [@sidebarAnimation]="sidebarOpenStatus ? 'visible' : 'hidden'">
+  <div class="sidebar-close">
+    <img src="/assets/icons/close.svg" (click)="toggleSideBar()" />
+  </div>
+  <div class="sidebar-body">
+    <p
+      *ngFor="let tab of headerTabs"
+      (click)="setActiveHeaderItem(tab.value, tab.link)"
+      class="sidebar-body-item"
+      [ngClass]="{
+        active: tab.value === activeHeaderItem
+      }"
+    >
+      {{ tab.title }}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,226 @@
+@import "src/assets/styles/colors";
+.footer {
+  &-headline {
+    display: flex;
+    align-items: center;
+    background: $primary-blue;
+    color: $white;
+    padding: 40px 335px;
+    &_discuss {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 61.2px;
+      height: 100%;
+    }
+    &_contact {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-left: 20px;
+      span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28.8px;
+      }
+      button {
+        width: 142px;
+        height: 49px;
+        padding: 14px 28px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: "Poppins-Semi-Bold";
+      }
+    }
+  }
+  &_social {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 335px;
+    &-logo {
+      display: flex;
+      flex-direction: column;
+      max-width: 481px;
+      gap: 20px;
+      img {
+        width: 126px;
+        height: 54px;
+      }
+      .text {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 61.2px;
+      }
+    }
+    &-email {
+      width: 481px;
+      position: relative;
+      margin-left: 20px;
+      .email-title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28.8px;
+        margin-left: 22px;
+        color: $gray-scale50;
+        white-space: nowrap;
+      }
+      .email-title::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -4px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: $gray-scale50;
+      }
+      .input-with-icon {
+        position: relative;
+        .input {
+          border: none;
+          border-bottom: 1px solid $gray-scale70;
+          outline: none;
+          padding: 18px 0;
+          width: 100%;
+        }
+        .input::placeholder {
+          color: $gray-scale10;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 15.6px;
+          font-family: "Poppins-Regular";
+        }
+        img {
+          position: absolute;
+          top: 20px;
+          right: 0;
+        }
+      }
+      .social-media {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 28px;
+        &-wrapper {
+          &-title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25.6px;
+            color: $gray-scale50;
+          }
+          &-elements {
+            display: flex;
+            justify-content: flex-end;
+            gap: 22px;
+            margin-top: 18px;
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              width: 33px;
+              height: 33px;
+              background: $gray-scale;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1268px) {
+  .footer-headline {
+    padding: 40px 115px;
+    &_discuss {
+      font-size: 22px;
+      line-height: 38px;
+    }
+    &_contact {
+      span {
+        font-size: 14px;
+        line-height: 22.8px;
+      }
+      button {
+        font-size: 12px;
+        line-height: 16px;
+        width: 122px;
+        height: 30px;
+        padding: 7px 22px;
+      }
+    }
+  }
+  .footer_social {
+    padding: 40px 115px;
+    &-logo {
+      img {
+        width: 115px;
+        height: 45px;
+      }
+      .text {
+        font-size: 26px;
+        line-height: 50px;
+      }
+    }
+    &-email {
+      width: 440px;
+      .email-title {
+        font-size: 14px;
+        line-height: 24.8px;
+        margin-left: 20px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+  .title {
+    font-size: 18px;
+  }
+  .text-1,
+  .text-2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-headline {
+    padding: 40px 55px;
+    &_discuss {
+      font-size: 18px;
+      line-height: 30.2px;
+    }
+    &_contact {
+      span {
+        font-size: 13px;
+        line-height: 20.8px;
+      }
+      button {
+        font-size: 11px;
+        line-height: 14px;
+        width: 110px;
+        height: 30px;
+        padding: 6px 20px;
+      }
+    }
+  }
+  .footer_social {
+    padding: 40px 55px;
+    &-logo {
+      .text {
+        font-size: 18px;
+        line-height: 40px;
+      }
+    }
+    &-email {
+      .email-title {
+        font-size: 13px;
+        line-height: 23.8px;
+        margin-left: 18px;
+        margin-bottom: 14px;
+      }
+    }
+  }
+  .title {
+    font-size: 16px;
+  }
+  .text-1,
+  .text-2 {
+    font-size: 12px;
+  }
+}

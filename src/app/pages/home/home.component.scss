@@ -1,0 +1,162 @@
+@import "src/assets/styles/colors";
+.room-content {
+  padding: 40px 335px;
+  &_minimalist-room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_title {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 78.4px;
+      font-family: "Poppins-Bold";
+      text-align: center;
+    }
+    &_info {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28.8px;
+      text-align: center;
+      width: 518px;
+      margin-bottom: 46px;
+    }
+    &_image {
+      width: 100%;
+    }
+  }
+  &_overview-process {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 56px;
+    gap: 35px;
+    &-project {
+      flex: 1;
+      .title {
+        font-weight: 600;
+        line-height: 33.6px;
+        font-size: 24px;
+        color: $gray-scale50;
+      }
+      .text-1 {
+        font-weight: 400;
+        line-height: 28.8px;
+        font-size: 18px;
+        color: $gray-scale10;
+      }
+      .text-2 {
+        display: flex;
+        font-weight: 400;
+        line-height: 28.8px;
+        font-size: 18px;
+        color: $gray-scale10;
+        p {
+          margin: 40px 25px 0 0;
+        }
+      }
+    }
+    &-design {
+      flex: 1;
+      .title {
+        font-weight: 600;
+        line-height: 33.6px;
+        font-size: 24px;
+        color: $gray-scale50;
+      }
+      .text-1 {
+        font-weight: 400;
+        line-height: 28.8px;
+        font-size: 18px;
+        color: $gray-scale10;
+      }
+      .text-2 {
+        font-weight: 400;
+        line-height: 28.8px;
+        font-size: 18px;
+        color: $gray-scale10;
+      }
+    }
+  }
+  &_gallery {
+    &-row {
+      margin-top: 36px;
+    }
+    .line-1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+      img {
+        width: 100%;
+      }
+    }
+    .line-2 {
+      img {
+        width: 100%;
+      }
+    }
+    .line-3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 1268px) {
+  .room-content {
+    padding: 40px 115px;
+    &_minimalist-room {
+      &_title {
+        font-size: 46px;
+        line-height: 64.4px;
+      }
+      &_info {
+        font-size: 16px;
+        line-height: 20.8px;
+        text-align: center;
+        width: 425px;
+      }
+    }
+    &_overview-process {
+      flex-direction: column;
+    }
+  }
+  .title {
+    font-size: 18px;
+  }
+  .text-1, .text-2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .room-content {
+    padding: 40px 55px;
+    &_minimalist-room {
+      &_title {
+        font-size: 36px;
+        line-height: 50px;
+      }
+      &_info {
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        width: 356px;
+      }
+    }
+    &_gallery {
+      .line-1, .line-3 {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .title {
+    font-size: 16px;
+  }
+  .text-1, .text-2 {
+    font-size: 12px;
+  }
+}

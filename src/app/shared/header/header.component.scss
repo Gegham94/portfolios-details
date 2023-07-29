@@ -1,0 +1,116 @@
+@import "src/assets/styles/colors";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 335px;
+  &_logo {
+    width: 126px;
+    margin-right: 24px;
+  }
+
+  &_tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    &-item {
+      line-height: 24px;
+      font-size: 16px;
+      padding: 14px 32px;
+      margin: 0;
+      cursor: pointer;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    .gray {
+      font-weight: 600;
+      color: $gray-scale50;
+    }
+    .active {
+      background-color: $primary-blue;
+      color: $white;
+    }
+  }
+
+  &_sidebar-button {
+    .sidebar-icon {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  padding: 15px;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  z-index: 9999;
+  background: $white;
+  box-shadow: 0px 0px 5px 0px $gray-scale50;
+  height: 100%;
+  &-close {
+    text-align: right;
+    cursor: pointer;
+    img {
+      width: 15px;
+      height: 15px;
+      margin-bottom: 16px;
+    }
+  }
+  &-body {
+    &-item {
+      cursor: pointer;
+      width: 100%;
+      padding: 5px 0;
+      user-select: none;
+      transition: background-color 0.2s, color 0.2s;
+      white-space: nowrap;
+      border-radius: 2px;
+      padding: 5px 0 5px 10px;
+      flex: 1;
+    }
+    .active {
+      background-color: $primary-blue;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 1368px) {
+  .header {
+    padding: 40px 205px;
+  }
+  .header_tabs-item {
+    line-height: 24px;
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+  .header_logo {
+    width: 96px;
+  }
+}
+@media (max-width: 998px) {
+  .header {
+    padding: 40px 115px;
+  }
+  .header_tabs-item {
+    line-height: 12px;
+    font-size: 12px;
+    padding: 12px 12px;
+  }
+  .header_logo {
+    width: 68px;
+  }
+}
