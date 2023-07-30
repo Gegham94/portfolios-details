@@ -1,6 +1,6 @@
 @import "src/assets/styles/colors";
 .room-content {
-  padding: 40px 335px;
+  padding: 40px 285px;
   &_minimalist-room {
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@
     }
   }
 }
-@media (max-width: 1268px) {
+@media (max-width: 1368px) {
   .room-content {
     padding: 40px 115px;
     &_minimalist-room {

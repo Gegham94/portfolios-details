@@ -5,7 +5,7 @@
     align-items: center;
     background: $primary-blue;
     color: $white;
-    padding: 40px 335px;
+    padding: 40px 285px;
     &_discuss {
       font-weight: 600;
       font-size: 36px;
@@ -36,7 +36,7 @@
   &_social {
     display: flex;
     justify-content: space-between;
-    padding: 40px 335px;
+    padding: 40px 285px;
     &-logo {
       display: flex;
       flex-direction: column;
@@ -127,7 +127,7 @@
     }
   }
 }
-@media (max-width: 1268px) {
+@media (max-width: 1368px) {
   .footer-headline {
     padding: 40px 115px;
     &_discuss {

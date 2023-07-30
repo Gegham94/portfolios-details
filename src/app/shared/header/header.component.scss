@@ -6,7 +6,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 335px;
+  padding: 40px 285px;
   &_logo {
     width: 126px;
     margin-right: 24px;
@@ -21,7 +21,7 @@
     &-item {
       line-height: 24px;
       font-size: 16px;
-      padding: 14px 32px;
+      padding: 12px 22px;
       margin: 0;
       cursor: pointer;
       text-align: center;
@@ -90,7 +90,7 @@
 
 @media (max-width: 1368px) {
   .header {
-    padding: 40px 205px;
+    padding: 40px 115px;
   }
   .header_tabs-item {
     line-height: 24px;
@@ -102,9 +102,6 @@
   }
 }
 @media (max-width: 998px) {
-  .header {
-    padding: 40px 115px;
-  }
   .header_tabs-item {
     line-height: 12px;
     font-size: 12px;
